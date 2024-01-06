@@ -1,0 +1,44 @@
+/*CSS PER LA GRIGLIA DEI VIDEOGICHI*/
+.gamesgrid{
+    display: flex;
+    border-radius: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    background-color: #272727;
+    
+    margin-left: 18.5px;
+    margin-right: 20px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    float: left;
+    height: fit-content;
+    width: fit-content;
+}
+
+/*CSS PER IL DIV DEDICATO AI GIOCHI*/
+.game{
+    margin: 15px;
+}
+
+span{
+	font-size: 20px;
+	color: white;
+}
+
+.price{
+	float: right;
+	font-size: 30px;
+	color: white;
+}
+
+.cover{
+	border-radius: 20px;
+	transition: all 0.3s ease-in-out;
+}
+
+.cover:hover{
+	transform: scale(1.050);
+}

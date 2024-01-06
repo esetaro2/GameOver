@@ -1,0 +1,386 @@
+#main{
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/loginbg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#container{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+html, head, body{
+    margin: 0%;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(77, 77, 77);
+    height: 100%;
+    width: 100%;
+}
+
+.regcontainer{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: center;
+    row-gap: 30px;
+    text-align: center;
+    padding: 20px;
+    height: 100%;
+}
+.title{
+	margin-bottom:15px;
+}
+
+.title img{
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.title img:hover{
+    opacity: 0.7;
+}
+
+.middle{
+    background: rgba(0, 0, 0, 0.5);
+    width: 400px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+    animation: fadeIn;
+    animation-duration: 1s;
+}
+
+.regcontainer h1{
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.regcontainer label{
+    color: white;
+    font-size: x-large;
+}
+
+.formcontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.regcontainer input[type=text], .regcontainer input[type=email], .regcontainer input[type=password], .regcontainer input[type=tel]{
+    width: 90%;
+    border: 2.5px solid rgb(155, 155, 155);
+    border-radius: 4px;
+    padding: 2px;
+    transition: all 0.2s ease-in-out;
+    font-size: medium;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: rgba(73, 73, 73, 0.658);
+    color: white;
+    font-size: large;
+    outline: none;
+}
+
+.regcontainer input[type=text]:hover, .regcontainer input[type=email]:hover, .regcontainer input[type=password]:hover, .regcontainer input[type=tel]:hover,  .regcontainer input[type=text]:focus, .regcontainer input[type=email]:focus, .regcontainer input[type=password]:focus, .regcontainer input[type=tel]:focus{
+    border: 2.5px solid white;
+}
+
+.regcontainer ::placeholder{
+    color: rgb(155, 155, 155);
+}
+
+.regcontainer input[type=submit]{
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    width: 90px;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    font-size: large;
+    margin-bottom: 20px;
+}
+
+.regcontainer input[type=submit]:hover{
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+}
+
+#scadenza{
+    width: 50px;
+}
+
+.regcontainer a{
+    color: white;
+    transition: all 0.3s ease-in-out;
+  }
+  
+.regcontainer a:hover{
+    color: rgb(150, 150, 150);
+}
+
+#errorname, #errorsurname, #errorusername, #errorpassword, #errorvia, #errorcivico, #errorcitta, #errorprovincia, #errorcap, #errorncarta{
+    display: none;
+    overflow: hidden;
+    color: red;
+}
+
+.userareacontainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+    column-gap: 15px;
+    padding: 10px;
+}
+
+.leftuser{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.imgcontainer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.imgcontainer img{
+    height: 150px;
+}
+
+.imgcontainer button{
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    width: 90px;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    font-size: large;
+    margin-bottom: 20px;
+}
+
+.imgcontainer button:hover{
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+}
+
+.rightuser{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    float: right;
+}
+
+.userinfocontainer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    border:2px solid white;
+    border-radius:7px;
+    padding:10px;
+}
+
+.userinfocontainer h2{
+    color: white;
+}
+
+.anagraficdata{
+	margin-bottom:20px;
+}
+
+.anagraficdata p{
+    color: white;
+    font-size: 20px;
+}
+
+.anagraficdata span{
+    font-weight: bold;
+}
+
+.contactuser{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.contactu{
+	margin-bottom:20px;
+}
+
+.contactu p{
+    color: white;
+    font-size: 20px;
+}
+
+.contactu span{
+    font-weight: bold;
+}
+
+.addressuser{
+	margin-bottom:20px;
+}
+
+.addressuser p{
+    font-size: 20px;
+    color: white;
+}
+
+.addressuser span{
+    font-weight: bold;
+}
+
+.paymentuser{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.creditcard{
+    position: relative;
+    background-image: url(../img/creditbg.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 250px;
+    width: 500px;
+    border-radius: 20px;
+    padding: 30px;
+    font-family: 'Roboto Mono', monospace;
+    margin-bottom: 30px;
+    overflow:hidden;
+}
+
+.chipcontainer{
+    position: absolute;
+    top: 10%;
+}
+
+.chipcontainer img{
+    width: 60px;
+}
+
+.banklogo{
+    position: absolute;
+    right: 5%;
+}
+
+.banklogo img{
+    width: 50px;
+}
+
+.numbercard{
+    position: absolute;
+    top: 40%;
+}
+
+.numbercard p{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.expiresdate{
+    position: absolute;
+    top: 60%;
+    left: 35%;
+}
+
+.expiresdate p{
+    color: white;
+    font-size: 15px;
+}
+
+.expiresdate span{
+    position: absolute;
+    top: 0%;
+    margin-left: 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.nomecontainer{
+    position: absolute;
+    width: 100%;
+    top: 65%;
+    height: 35px;
+    color: white;
+    padding-bottom: 20px;
+}
+
+.name{
+    text-align: center;
+    top: 90%;
+    position: absolute;
+}
+
+.name p{
+    font-size: 25px;
+}
+
+.cvv{
+    position: absolute;
+    height: fit-content;
+    top: 80.5%;
+    right: 10%;
+}
+
+.cvv p{
+    font-size: 18px;
+    color: white;
+}
+
+.cvv span{
+    font-size: 24px;
+    font-weight: bold;
+}
